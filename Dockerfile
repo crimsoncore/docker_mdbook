@@ -19,7 +19,7 @@ RUN wget https://github.com/crimsoncore/mdbook_docker/blob/master/mdbook-v0.3.5-
 RUN tar -xvzf /opt/mdbook/mdbook.tar.gz
 RUN rm /opt/mdbook/mdbook.tar.gz
 #COPY run.sh /opt/mdbook
-RUN wget https://raw.githubusercontent.com/crimsoncore/mdbook_docker/master/run.sh -O /opt/mdbook/run.sh
+RUN wget https://raw.githubusercontent.com/crimsoncore/docker_mdbook/master/run.sh -O /opt/mdbook/run.sh
 RUN chmod +x /opt/mdbook/run.sh
 ENTRYPOINT "/opt/mdbook/run.sh"
 
