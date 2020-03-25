@@ -4,3 +4,8 @@ go to the directory where you cloned the wiki git repository (/opt/wiki or /User
 cd /opt/wiki
 sudo docker run -it -v $PWD:/opt/wiki -p 3000:3000 -p 3001:3001 crimsoncorelabs/mdbook
 ```
+
+Manual build
+====
+docker build -t docker_mdbook:original .
+docker image ls -a
